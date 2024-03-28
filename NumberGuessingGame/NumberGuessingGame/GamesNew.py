@@ -13,9 +13,9 @@ def Game(guessCount, max):
                 print("{} is incorrect\n".format(num))
                 guesses -= 1
                 if guesses <= 3 and guesses != 1 and ans <= max/2:
-                    print("Hint: The answer is a low number.")
+                    print("Hint: The answer is a lower number.")
                 else:
-                    print("Hint: The answer is a high number.")
+                    print("Hint: The answer is a higher number.")
         except ValueError:
             print("Not a number")
     if guesses == 0:
